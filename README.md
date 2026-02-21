@@ -1,20 +1,115 @@
-<<<<<<< HEAD
-# React + Vite
+# React Advanced Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Counter Application built using **React Hooks**.  
+This project demonstrates practical usage of:
 
-Currently, two official plugins are available:
+- useState
+- useRef
+- useEffect
+- DOM manipulation using ref
+- Functional state updates
+- Clean UI with modern CSS styling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Increment counter
+- Decrement counter
+- Reset counter
+- Track button click count using useRef
+- Change button color dynamically
+- Smooth hover animations
+- Responsive card layout
+- Gradient background design
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# react-project_12
->>>>>>> e984655b2d65e6fa5393179706fedd9c27cb0134
+##  Technologies Used
+
+- React
+- JavaScript (ES6+)
+- CSS3
+- Vite
+
+---
+
+##  Project Structure
+
+```
+react-counter-app/
+│
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+##  Getting Started
+
+### 1️ Clone the repository
+
+```
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+```
+
+### 2️ Navigate into the project folder
+
+```
+cd YOUR_REPOSITORY_NAME
+```
+
+### 3️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 4️ Run the development server
+
+```
+npm run dev
+```
+
+---
+
+##  Preview
+
+- Clean centered card layout
+- Gradient background
+- Interactive counter controls
+- Dynamic styling using useRef
+
+---
+
+##  Learning Concepts Covered
+
+- React functional components
+- State management with useState
+- Persisting values without re-render using useRef
+- Side effects with useEffect
+- DOM access in React
+- CSS transitions and layout design
+
+---
+
+##  Future Improvements
+
+- Add dark mode toggle
+- Add custom increment input
+- Add animation on count change
+- Convert into reusable Counter component
+- Deploy using Vercel or Netlify
+
+---
+
+## 👤 Author
+
+Krish Ghori  
+Computer Engineering Student
