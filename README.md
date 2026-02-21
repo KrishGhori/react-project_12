@@ -53,25 +53,13 @@ react-counter-app/
 
 ##  Getting Started
 
-### 1️ Clone the repository
-
-```
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-```
-
-### 2️ Navigate into the project folder
-
-```
-cd YOUR_REPOSITORY_NAME
-```
-
-### 3️⃣ Install dependencies
+###  Install dependencies
 
 ```
 npm install
 ```
 
-### 4️ Run the development server
+###  Run the development server
 
 ```
 npm run dev
@@ -109,7 +97,7 @@ npm run dev
 
 ---
 
-## 👤 Author
+##  Author
 
 Krish Ghori  
-Computer Engineering Student
+
