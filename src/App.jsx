@@ -8,12 +8,12 @@ function App() {
   const colorIndex = useRef(0);
 
   const colors = [
-    "#2563eb", // blue
-    "#dc2626", // red
-    "#16a34a", // green
-    "#9333ea", // purple
-    "#f59e0b", // orange
-    "#0ea5e9"  // sky
+    "#2563eb",
+    "#dc2626",
+    "#16a34a",
+    "#9333ea",
+    "#f59e0b",
+    "#0ea5e9"
   ];
 
   function handleIncrement() {
@@ -21,10 +21,17 @@ function App() {
     setCount((prev) => prev + 1);
   }
 
+  function handleDecrement() {
+    setCount((prev) => prev - 1);
+  }
+
+  function handleReset() {
+    setCount(0);
+  }
+
   function handleColorChange() {
     colorIndex.current = (colorIndex.current + 1) % colors.length;
     btnRef.current.style.backgroundColor = colors[colorIndex.current];
-    btnRef.current.style.color = "white";
   }
 
   useEffect(() => {
@@ -34,20 +41,31 @@ function App() {
   return (
     <div className="container">
       <div className="card">
-        <h1>React Counter App</h1>
+        <h1 className="title">Counter App</h1>
 
-        <h2>{count}</h2>
-        <p>Button Clicked: {renderCount.current} times</p>
+        <div className="count">{count}</div>
 
-        <button ref={btnRef} className="btn" onClick={handleIncrement}>
-          Increment
-        </button>
+        <div className="button-group">
+          <button ref={btnRef} className="btn primary" onClick={handleIncrement}>
+            Increment
+          </button>
 
-        <br /><br />
+          <button className="btn danger" onClick={handleDecrement}>
+            Decrement
+          </button>
+
+          <button className="btn secondary" onClick={handleReset}>
+            Reset
+          </button>
+        </div>
 
         <button className="btn outline" onClick={handleColorChange}>
-          Change Color of Increment Button
+          Change Increment Button Color
         </button>
+
+        <p className="render">
+          Increment clicked: {renderCount.current} times
+        </p>
       </div>
     </div>
   );
